@@ -64,7 +64,7 @@ function AiTextToImg() {
             className={`px-4 py-2 rounded-full text-sm font-medium border
             ${
             aiReady
-                ? "bg-green-500/20 text-green-300 border-green-500/30"
+                ? "bg-green-500/20 text-green-300 border-green-500"
                 : "bg-yellow-500/20 text-yellow-300 border-yellow-500/30"
             }`}
         >
@@ -96,7 +96,7 @@ function AiTextToImg() {
                 disabled={!aiReady}
                 maxLength={111}
                 placeholder="Enter your image prompt... (max 111 chars only!!!)"
-                className="w-full h-32 md:h-40 rounded-xl p-3 outline-none border-2 focus:outline-none focus:ring-2 focus:ring-pink-400 transition duration-300 focus:shadow-pink-700/70"
+                className="w-full h-32 md:h-40 rounded-xl p-3 outline-none border-2 border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-400 transition duration-300 focus:shadow-pink-700/70"
             />
             <div className='text-right'>
                 <p className='text-sm text-gray-400'>{text.length} /111 characters</p>
