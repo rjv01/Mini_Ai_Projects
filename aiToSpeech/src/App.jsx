@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import HomePage from "./Components/HomePage";
 import AiToSpeech from "./Components/AiToSpeech";
+import AiTextToImg from "./Components/AiTextToImg";
 
 function App() {
   
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}/>
-        <Route path="/aitospeech" element={<AiToSpeech />}/>
+        <Route path="/aitexttospeech" element={<AiToSpeech />}/>
+        <Route path="/aitexttoimg" element={<AiTextToImg />}/>
       </Routes> 
       <Footer />
     </div>
