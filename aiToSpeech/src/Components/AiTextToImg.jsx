@@ -44,7 +44,7 @@ function AiTextToImg() {
             setCurrentImg(img);
         } catch(error){
             console.error("Puter AI error:", error);
-            setError(error.message || "Something went wrong with text-to-img!");
+            setError(error.message   || "Something went wrong with text-to-img!(free service...)");
         } finally{
             setLoading(false);
             setText("");
